@@ -1,0 +1,24 @@
+{
+	"host": {
+		"enable": 1,
+		"phy": 0,
+		"lane": 2,
+		"datatype": "0x2c",
+		"mclk": 24,
+		"mipiclk": 2250,
+		"fps": 50,
+		"width": 1920,
+		"height": 1080,
+		"linelenth": 2976,
+		"framelenth": 1313,
+		"settle": 30,
+		"hsa": 0,
+		"hbp": 0,
+		"hsd": 0,
+		"vc_num": 1,
+		"vc0_index": 0,
+		"param": {
+				"stop_check_instart": 1
+		}
+	}
+}

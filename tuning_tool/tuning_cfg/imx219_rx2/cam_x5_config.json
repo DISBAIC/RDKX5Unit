@@ -1,0 +1,26 @@
+{
+	"not_used_deserial_0": {
+		"deserial_name": "max9296",
+		"deserial_addr": "0x48",
+		"mipi": "./raw10_1280x720_30fps.json"
+	},
+	"port_0": {
+		"sensor_name": "imx219",
+		"serial_addr": "0x40",
+		"sensor_addr": "0x10",
+		"eeprom_addr": "0x50",
+		"sensor_mode": 1,
+		"fps": 30,
+		"format": 43,
+		"width": 1920,
+		"height": 1080,
+		"extra_mode": 0,
+		"config_index": 0,
+		"gpio_enable_bit": "0x01",
+		"gpio_level_bit": 0,
+		"not_used_deserial_index": 0,
+		"not_used_deserial_port": 0,
+		"calib_lname": "disable",
+		"mipi": "./raw10_1920x1080_30fps.json"
+	}
+}

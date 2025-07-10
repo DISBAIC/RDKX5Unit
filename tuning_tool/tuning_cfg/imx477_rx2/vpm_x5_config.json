@@ -1,0 +1,111 @@
+{
+	"pipeline0": {
+		"bind": [
+			{
+				"source": "vin_node0",
+				"src_out_channel": 0,
+				"destination": "isp_node0",
+				"dst_input_channel": 0
+			}
+		],
+		"vin_node0": {
+			"cim": {
+				"input": {
+					"mipi": {
+						"enable": 1,
+						"width": 1920,
+						"height": 1080,
+						"format": 44,
+						"vc_index": 0,
+						"rx_index": 2,
+						"channels": 1,
+						"vin_attr_ex_mask": "0x00",
+						"mclk_freq": 24000000,
+						"function": {
+							"enable_frame_id": 0,
+							"set_init_frame_id": 1,
+							"enable_pattern": 0
+						}
+					},
+					"ddr_in": {
+						"rdma_en": 0,
+						"wstride": 4096,
+						"buf_num": 6
+					}
+				},
+				"output": {
+					"cim_isp": {
+						"cim_isp_flyby": 0,
+						"ddr_enable": 1,
+						"buf_num": 6,
+						"format": 44,
+						"pack_mode": 1,
+						"wstride": 3840,
+						"roi": {
+							"roi_en": 0,
+							"roi_x": 0,
+							"roi_y": 0,
+							"roi_width": 3840,
+							"roi_height": 2160
+						},
+						"rawds": {
+							"rawds_en": 0,
+							"weight_g0": 4921,
+							"weight_g1": 12691,
+							"weight_g2": 14611,
+							"weight_g3": 37681
+						}
+					},
+					"cim_pym": {
+						"cim_pym_flyby": 0
+					},
+					"roi": {
+						"roi_en": 0,
+						"roi_x": 0,
+						"roi_y": 0,
+						"roi_width": 1280,
+						"roi_height": 720,
+						"format": 30,
+						"wstride": 1280
+					},
+					"emb": {
+						"roi": {
+							"roi_en": 0,
+							"roi_x": 0,
+							"roi_y": 0,
+							"roi_width": 3840,
+							"roi_height": 2160
+						},
+						"emb_en": 0,
+						"embeded_dependence": 1,
+						"embeded_width": 3840,
+						"embeded_height": 2,
+						"format": 30,
+						"wstride": 3840
+					}
+				}
+			}
+		},
+		"isp_node0": {
+			"input_mode": 2,
+			"sched_mode": 0,
+			"sensor_mode": 0,
+			"width": 1920,
+			"height": 1080,
+			"input_format": 1,
+			"input_bit_width": 12,
+			"input_crop_x": 0,
+			"input_crop_y": 0,
+			"input_crop_w": 1920,
+			"input_crop_h": 1080,
+			"tpg_en": 0,
+			"ddr_en": 1,
+			"output_x": 0,
+			"output_y": 0,
+			"output_w": 0,
+			"output_h": 0,
+			"output_format": 2,
+			"output_bit_width": 8
+		}
+	}
+}

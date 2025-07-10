@@ -1,0 +1,21 @@
+{
+	"comment": "1v raw10 1920x1080: dummy as sc230",
+	"global": {
+		"env": {
+			"CAM_I2C_DUMMY": "3"
+		}
+	},
+	"port_0": {
+		"sensor_name": "dummy",
+		"calib_lname": "disable",
+		"mipi": "disable",
+		"sensor_addr": "0xFF",
+		"sensor_mode": 1,
+		"fps": 30,
+		"width": 1920,
+		"height": 1080,
+		"extra_mode": 0,
+		"config_index": 0,
+		"format": 43
+	}
+}
