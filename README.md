@@ -25,22 +25,16 @@
 # 烧录最新镜像 
 ```  
 
-### 配置文件  
-修改 `configs/` 目录下的配置：  
-- `dev.yaml`：开发环境参数（如调试模式、本地测试路径）  
-- `prod.yaml`：生产环境参数（如部署服务器、硬件接口）  
 
 ### 运行项目  
 ```bash  
 # 开发模式  
-python src/main.py --config configs/dev.yaml  
+python my_project/main.py 
 
-# 生产模式  
-python src/main.py --config configs/prod.yaml  
 ```  
 
 
-## 快速开始  
+## 快速开始  to-do  
 1. 启动系统总控制器  
 2. 部署 RDK X3 控制器至无人车  
 3. 上传预训练 YOLOv11-seg 模型至 `models/` 目录  
@@ -48,23 +42,15 @@ python src/main.py --config configs/prod.yaml
 5. 通过 Web 界面（`localhost:8080`）监控系统状态  
 
 
-## 文档指南  
+## 文档指南  to-do  
 - **API 文档**：`docs/api_reference.md`  
 - **架构设计**：`docs/architecture_design.pdf`  
 - **开发指南**：`docs/development_guide.md`  
 - **测试报告**：`docs/test_report.md`  
 
 
-## 参与贡献  
-1. Fork 本仓库  
-2. 创建功能分支：`git checkout -b feature/new_module`  
-3. 提交规范 commit：`git commit -m "feat: 添加新的传感器融合模块"`  
-4. 推送分支：`git push origin feature/new_module`  
-5. 提交 Pull Request  
-
-
 ## 致谢  
-感谢全国大学生嵌入式芯片与系统设计竞赛组委会提供的平台，以及 [导师（匿名）] 团队的技术指导。  
+感谢全国大学生嵌入式芯片与系统设计竞赛组委会提供的平台，以及 [导师] 团队的技术指导。  
 
   
 *本项目基于 Apache 2.0 许可证开源，商业使用请联系团队获取授权。*
